@@ -1,0 +1,66 @@
+
+user@DESKTOP-OH1EKIQ MINGW64 ~/Desktop/Automat 13 (master)
+$ git config --global user.email "eryk.stebelski@gmail.com"
+
+user@DESKTOP-OH1EKIQ MINGW64 ~/Desktop/Automat 13 (master)
+$ git config --global user.name "eryks1994"
+
+user@DESKTOP-OH1EKIQ MINGW64 ~/Desktop/Automat 13 (master)
+$ git config --global init.defaultBranch main
+
+user@DESKTOP-OH1EKIQ MINGW64 ~/Desktop/Automat 13 (master)
+$ git config user.name
+
+
+
+Przejdz kliknij prawym przyciskiem myszy na folter w ktorym chce zrobić repozytorium lokalne/GitHub
+Otworzy GIT Bash i wpisz poniższe komendy. W miedzy czasie zostaniesz poproszony o zalogowanie sie to githuba
+
+Create new repository
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github/white185/.....
+git push -u origin main
+
+
+
+
+
+Push for existing repository
+git add README.md
+git init
+git add .
+gir commit -m "abc"
+git remote add origin https://github.com/white185/....
+git branch -M main
+git push -u origin main
+
+############################## Real usage of upload to remote repository!!!!!!!
+user@DESKTOP-OH1EKIQ MINGW64 ~/Desktop/Automat 13/30_Program (main)
+$ git add .
+
+user@DESKTOP-OH1EKIQ MINGW64 ~/Desktop/Automat 13/30_Program (main)
+$ git commit -m "Working automatic execution of list of processes, checked on real presure actuators, only issues with mechanical collisiton "
+$ git push origin main
+            To https://github.com/eryks1994/Automat-13.git
+            ! [rejected]        main -> main (fetch first)
+            error: failed to push some refs to 'https://github.com/eryks1994/Automat-13.git'
+            hint: Updates were rejected because the remote contains work that you do not
+            hint: have locally. This is usually caused by another repository pushing to
+            hint: the same ref. If you want to integrate the remote changes, use
+            hint: 'git pull' before pushing again.
+            hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+$ git push --force origin main
+
+
+
+To pull data from repository in folder that You opened bash
+git remote add origin https://github.com/eryks1994/Automat-13.git
+git pull origin main
+
+
+
+
+
